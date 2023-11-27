@@ -31,7 +31,7 @@ public class Main3 {
     }
 
     public static double areaTriangle(double m1, double m2, double m3){
-        double p = m1 + m2 + m3;
+        double p = (m1 + m2 + m3) / 2;
         return Math.sqrt(p * (p - m1) * (p - m2) * (p - m3));
     }
 }

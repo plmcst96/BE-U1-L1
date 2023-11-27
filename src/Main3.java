@@ -9,14 +9,14 @@ public class Main3 {
         System.out.println("Ecco il perimetro del tuo rettangolo: " + perimeterRettangle(l1, l2));
 
         System.out.println("scegli il tuo numero e vediamo il risultato!");
-        int n = input.nextInt();
+        int n = Integer.parseInt(input.nextLine());
         if (pariDispari(n) == 0) System.out.println(n + " è pari");
         else System.out.println(n + " è dispari");
 
         System.out.println("scegli tre numeri per i lati del tuo rettangolo!");
-        int m1 = input.nextInt();
-        int m2 = input.nextInt();
-        int m3 = input.nextInt();
+        double m1 = Double.parseDouble(input.nextLine());
+        double m2 = Double.parseDouble(input.nextLine());
+        double m3 = Double.parseDouble(input.nextLine());
         System.out.println("L'area del triangolo è " + areaTriangle(m1, m2, m3));
         input.close();
     }

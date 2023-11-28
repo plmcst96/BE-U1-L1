@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Inserisci il valore dei 2 lati del rettangolo!");
         double l1 = input.nextDouble();
@@ -21,16 +21,16 @@ public class Main3 {
         input.close();
     }
 
-    public static double perimeterRettangle(double l1, double l2){
-        return (l1*2) + (l2*2);
+    public static double perimeterRettangle(double l1, double l2) {
+        return (l1 * 2) + (l2 * 2);
     }
 
-    public static int pariDispari(int num){
-        if (num % 2  == 0) return 0;
+    public static int pariDispari(int num) {
+        if (num % 2 == 0) return 0;
         else return 1;
     }
 
-    public static double areaTriangle(double m1, double m2, double m3){
+    public static double areaTriangle(double m1, double m2, double m3) {
         double p = (m1 + m2 + m3) / 2;
         return Math.sqrt(p * (p - m1) * (p - m2) * (p - m3));
     }
